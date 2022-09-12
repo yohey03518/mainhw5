@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="d-flex">
+      <div class="d-flex flex-column menu p-5" style="background-color: #F8F9FA">
+        <nav clas="d-flex ">
+          <img src="./assets/images/logo-ANSWER.svg" alt="logo">
+          <ul class="list-unstyled">
+            <li><a href="#" class="d-flex text-decoration-none"><span class="material-icons">assessment</span><span>Dashboard</span></a></li>
+            <li><a href="#" class="d-flex text-decoration-none"><span class="material-icons">forum</span><span>Question</span></a></li>
+            <li><a href="#" class="d-flex text-decoration-none"><span class="material-icons">assignment</span><span>Assignment</span></a></li>
+            <li><a href="#" class="d-flex text-decoration-none"><span class="material-icons">video_library</span><span>Course</span></a></li>
+            <li><a href="#" class="d-flex text-decoration-none"><span class="material-icons">people</span><span>Admin</span></a></li>
+            <li><a href="#" class="d-flex text-decoration-none"><span class="material-icons">settings</span><span>Settings</span></a></li>
+          </ul>
+        </nav>
+        <div class="d-flex">
+          <img src="./assets/images/andychen.jpeg" alt="andy" class="w-100">
+          <div class="d-flex">
+            <span>Andy Chen</span>
+            <span>andy0401@mail.com</span>
+          </div>
+        </div>
+      </div>
+      <main>
+        <%- contents %>
+      </main>
+    </div>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +75,11 @@
       </div>
     </nav>
 
-    <%- contents %>
+    ***
 
     <footer class="footer">
       footer
-    </footer>
+    </footer> -->
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
