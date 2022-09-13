@@ -1,3 +1,22 @@
 .menu {
   width: 296px;
 }
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.login-info {
+
+  .name {
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+
+  .email {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
